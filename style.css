@@ -513,23 +513,9 @@ li {
   #wrapper p {
     margin-left: 30px;
   }
-  .welcome_text {
-    width: 250px;
-  }
-  .welcome_form input {
-    width: 100%;
-  }
-  #progressBar {
-    width: 15rem;
-    height: 2rem;
-    border: 0.2rem solid rgb(87, 55, 24);
-  }
 
-  #progressBarFull {
-    height: 1.7rem;
 
-    width: 2%;
-  }
+
   .welcome_form #meh {
     font-size: 20px;
   }
@@ -551,13 +537,11 @@ li {
   }
   .option {
     font-size: 10px;
-    display: block;
+   
     width: 85%;
     margin-bottom: 5px;
     padding: 10px 10px;
-    border-radius: 1px;
-    border: 2px solid rgb(87, 55, 24);
-    transition: 0.4s all;
+    
   }
   .quiz_timer {
     margin-left: 3px;
