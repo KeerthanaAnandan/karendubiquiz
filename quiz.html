@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KarenDubi Quiz</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <!--aos-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+     .wrapper {
+      background-color: #fbfbfb;
+      height: 120vh;
+
+      }
+    </style>
+  </head>
+  <body>
+     <!--navbar-->
+     <nav id="navbar">
+      <h1 class="logo">
+        <img src="Assets/logo.jpg" width="30%" style="padding:10px; margin:5px"/>
+      </h1>
+    </nav>
+    <div class="wrapper">
+      <div class="quiz">
+        <div class="quiz_header hud">
+          <div class="quiz_user">
+          <!--<div id="hud-item">
+            <p id="progressText" class="hud-prefix">
+                Question
+            </p>
+              <div id="progressBar">
+              <div id="progressBarFull"></div>
+              </div>
+          </div>-->
+         <!--- <div id="hud-item" class="hud-prefix quiz_timer">
+            <span class="time">00:00</span>
+          </div> -->
+          </div>
+          <br>
+      </div>
+        <div class="quiz_body" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
+          <div id="questions" onclick="next()">
+            <!-- <ul class="option_group">
+              <li class="option">option 1</li>
+              <li class="option">option 2</li>
+              <li class="option">option 3</li>
+              <li class="option">option 4</li>
+            </ul> -->
+          </div>
+
+         <!---<button class="btn-next" onclick="next()">Next Question</button>-->
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      </script>
+    <!-- site.js -->
+    <script src="js/site.js"></script>
+
+    
+  </body>
+</html>

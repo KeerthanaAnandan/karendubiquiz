@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KarenDubi Quiz</title>
+    
+ <!--aos-->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <!-- Custom Style  
+    <link rel="stylesheet" href="css/style.css" />-->
+    <style>
+      *{margin:10px;
+      padding: 0;}
+      body{
+        width:100vw;
+        height:100vh;
+       
+      }
+      .imgbucket {
+     
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+      }
+     /*showcase*/
+
+/*showcase*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
+  /*margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;*/
+}
+/*
+#showcase {
+  background: url("../../assets/tennis.jpg") no-repeat center center/cover;
+  height: 900px;
+}*/
+#showcase .showcase-content {
+  display: block;
+  margin: auto;
+  margin-top: auto;
+  color: #ffffff;
+  background: linear-gradient(120deg, #9e78ff, #8daafc);
+  text-align: center;
+
+    width:65vw;
+    height: 30vh;
+    padding: 100px 60px 90px 60px;
+
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 20px;
+  box-shadow: 0 0.4rem 0.4rem 0 #727070;
+}
+/*#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+#showcase .showcase-content h2,
+#showcase .showcase-content h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  line-height: 1.7em;
+  font-weight: lighter;
+  color:#000;
+}*/
+
+.showcase-content .btn {
+  color: #9e78ff;
+background-color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  
+  margin: 1.5rem;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 0px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.showcase-content .btn:hover {
+  background: transparent;
+  border: 1px solid rgb(17, 16, 16);
+  color: #fff;
+}
+@media (max-width: 540px) {
+  .logo{
+    width:300%;
+  }
+  #showcase .showcase-content {
+  
+  margin: auto;
+  margin-top: auto;
+   width:65vw;
+    height: 70vh;
+    padding: 70px 10px 70px 10px;}
+    .showcase-content .btn {
+  
+ 
+  font-size: 10px;
+  
+  margin: 1rem;
+  padding: 10px 20px;}
+  /*#showcase {
+    height: 800px;
+  }
+  #showcase .showcase-content h1 {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+  #showcase .showcase-content h2,
+  #showcase .showcase-content h3 {
+    font-size: 12px;
+    padding-bottom: 20px;
+    line-height: 1.7em;
+
+  }*/}
+
+    </style>
+  </head>
+  <body >
+    <!--navbar-->
+    <nav id="navbar">
+      <h1 class="logo">
+        <img src="Assets/logo.jpg" width="12%" />
+      </h1>
+    </nav>
+
+    <main>
+      <!--- <nav id="navbar">
+        
+          <div class="logo"><a href="index.html"><img src="assets/logo.png"/></a></div>
+          
+      
+      
+      </nav>-->
+      <div id="showcase" class="imgbucket" data-aos="zoom-in" data-aos-delay="200"  data-aos-duration="1000">
+        <div class="container">
+          <div class="showcase-content">
+            <!-- <img src="assets/polardentlogo.png" width="35%" id="imgcol" />-->
+
+            <h2 class="lead">Take the MIND THE GAP QUIZ to
+              Find out How Happy you are</h2>
+<br>
+            <!--- <div>
+              <input
+                type="text"
+                name="name"
+                id="namebox"
+                placeholder="Enter your name"
+                onchange="inputhandler(event)"
+              />
+            </div>-->
+<h3>Most people only focus on improving their career, wealth, health, and relationships - but in reality, there are many more areas of life that shape your success, happiness and true fulfillment</h3>
+            <div>
+              <a class="btn" href="quiz.html"> START QUIZ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-----------------custom js--------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
