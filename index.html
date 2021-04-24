@@ -17,7 +17,7 @@
       body{
         width:100vw;
         height:100vh;
-       
+       overflow: hidden;
       }
       .imgbucket {
      
@@ -33,7 +33,7 @@
   justify-content: center;
   align-items: flex-start;
   font-family: "Roboto", sans-serif;
-  width:100vw;
+  width:100vw !important;
   height:100vh;
   overflow: hidden;
   /*margin: auto;
@@ -48,15 +48,11 @@
 }*/
 #showcase .showcase-content {
   display: block;
-  margin: auto;
-  margin-top: auto;
   color: #ffffff;
   background: linear-gradient(120deg, #9e78ff, #8daafc);
   text-align: center;
-
-    width:65vw;
-    height: 30vh;
-    padding: 100px 60px 90px 60px;
+  width:70vw;
+  height: 50vh;
 
   font-family: 'Times New Roman', Times, serif;
   border-radius: 20px;
@@ -96,16 +92,18 @@ background-color: #fff;
   color: #fff;
 }
 @media (max-width: 540px) {
-  .logo{
-    width:300%;
+ 
+  .container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
   #showcase .showcase-content {
   
-  margin: auto;
-  margin-top: auto;
+ margin: auto;
    width:65vw;
-    height: 70vh;
-    padding: 0px 0px 0px 0px;}
+    height: max-content;
+    }
     .showcase-content .btn {
   
  
@@ -134,7 +132,7 @@ background-color: #fff;
     <!--navbar-->
     <nav id="navbar">
       <h1 class="logo">
-        <img src="Assets/logo.jpg" width="12%" />
+        <img src="Assets/logo.jpg" width="12%"/>
       </h1>
     </nav>
 
@@ -150,7 +148,7 @@ background-color: #fff;
         <div class="container">
           <div class="showcase-content">
             <!-- <img src="assets/polardentlogo.png" width="35%" id="imgcol" />-->
-
+<br><br>
             <h2 class="lead">Take the MIND THE GAP QUIZ to
               Find out How Happy you are</h2>
 <br>
