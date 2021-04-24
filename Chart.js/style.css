@@ -43,6 +43,7 @@
     }
     .padding {
         padding: 1rem;
+        font-size: xx-small;
     }
     .card{
         width:100vw;
@@ -55,7 +56,7 @@
 }
 
 .card {
-    
+    color: #9678ff;
     background: rgb(194, 32, 226);
     border-width: 0;
     border-radius: .25rem;
@@ -73,7 +74,7 @@
     background-clip: border-box;
     border: 1px solid rgba(19, 24, 44, .125);
     border-radius: .25rem;
-    
+    color: #9678ff;
 }
 
 .card-header {

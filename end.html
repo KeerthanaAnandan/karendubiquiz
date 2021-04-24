@@ -30,15 +30,15 @@
         opacity: 0.9;
         width: 100vw;
         height: auto;
-        color: azure;
+        color: #000;
       }
       #headone {
-        color: #fff;
+        color: #000;
       }
       #msghere {
         font-size: 25px;
         font-weight: bold;
-        color: #fff;
+        color: #000;
       }
       .logo {
         width: 100%;
@@ -48,28 +48,23 @@
         margin-left: 10px;
         cursor: pointer;
       }
-      #bucket {
-        background: linear-gradient(120deg, #9e78ff, #8daafc);
-        
-      }
+  
       .bucket {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+       text-align: center;
+        
         font-family: "Times New Roman", Times, serif;
 
-        text-align: center;
+     
 
       }
       #showcas .showcase-content {
-        color: #fff;
+        color: #000;
 
-        text-align: center;
+    
 
-        padding: 70px 40px;
+        padding: 10px 40px;
         width: 80%;
-        background-color: rgb(199, 158, 117);
+        
         margin: 50px !important;
         height: min-content;
         font-family: "Times New Roman", Times, serif;
@@ -83,8 +78,8 @@
       #showcas .showcase-content h2,
       #showcas .showcase-content h3 {
         font-size: 30px;
-        padding-bottom: 20px;
-        line-height: 1.7em;
+      
+        
         font-weight: lighter;
       }
       #showcas .btn {
@@ -151,14 +146,14 @@
           font-size: 17px;
         }
         #showcas .showcase-content {
-          color: #fff;
+          color: #000;
 
           text-align: center;
 
           padding: 20px 50px;
           width: 80%;
 
-          font-size: 20px;
+          font-size: small;
           line-height: 17px;
           font-family: "Times New Roman", Times, serif;
 
@@ -169,10 +164,10 @@
           font-weight: bold;
         }
         #showcas .showcase-content h2 {
-          font-size: 17px;
+          font-size: large;
         }
         #headone {
-          font-size: 50px;
+          
           font-weight: bolder;
         }
         .share-btn-area a i {
@@ -193,14 +188,27 @@
       </h1>
     </nav>
     <br /><br /><br />-->
-    <div id="showcas" data-aos="fade-up">
+    <div id="showcas" data-aos="fade-up" class="iamtext">
       <div class="bucket">
+        <h1>How Happy Are You?</h1></div>
         <div class="showcase-content" id="bucket">
           <!--<h2>
             Here is your result!.
           </h2>-->
           <br />
           <h1 class="headmsg" id="headone"></h1>
+          <div><h2  id="headone">1.Health & Vitality- <span class="one"></span>/10</h2><p class="paraone"></p> </div>
+          <div><h2  id="headone">2.Mindset & Emotional Mastery- <span class="two"></span>/10</h2><p class="paratwo"></p> </div>
+          <div><h2  id="headone">3.Romantic Love- <span class="three"></span>/10</h2><p class="parathree"></p> </div>
+          <div><h2  id="headone">4.Family- <span class="four"></span>/10</h2><p class="parafour"></p> </div>
+          <div><h2  id="headone">5.Friends & Social  - <span class="five"></span>/10</h2><p class="parafive"></p> </div>
+          <div><h2  id="headone">6.Productivity & Performance- <span class="six"></span>/10</h2><p class="parasix"></p> </div>
+          <div><h2  id="headone">7.Career & Business- <span class="seven"></span>/10</h2><p class="paraseven"></p> </div>
+          <div><h2  id="headone">8.Wealth & Finances- <span class="eight"></span>/10</h2><p class="paraeight"></p> </div>
+          <div><h2  id="headone">9.Recreation & Lifestyle- <span class="nine"></span>/10</h2><p class="paranine"></p> </div>
+          <div><h2  id="headone">10.Leadership, Impact & Contribution- <span class="ten"></span>/10</h2><p class="paraten"></p> </div>
+          <div><h2  id="headone">11.Spirituality- <span class="eleven"></span>/10</h2><p class="paraeleven"></p> </div>
+
 
           <!--<br />
           <h1><span class="points"></span></h1>
@@ -210,20 +218,31 @@
          <!-- <a class="btn" href="index.html" target="_blank">Start Over</a>-->
         </div>
       </div>
-    </div>
+  
    
 
-    <!-- user info -->
-    <script src="js/userInfo.js"></script>
+   
     <!-- <script src="./js/form.js"></script>-->
     <!------------------------------------------------------chart----------------------------->
-     <!--chart start-->
+     <!--chart start
      <link rel="stylesheet" href="Chart.js/style.css">
      <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
-     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
-     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
      <script>
+       let one = sessionStorage.getItem("first");
+let two = sessionStorage.getItem("second");
+let three = sessionStorage.getItem("third");
+let four= sessionStorage.getItem("fourth");
+let five = sessionStorage.getItem("fifth");
+let six = sessionStorage.getItem("sixth");
+let seven = sessionStorage.getItem("seventh");
+let eight = sessionStorage.getItem("eighth");
+let nine = sessionStorage.getItem("ninth");
+let ten = sessionStorage.getItem("tenth");
+let eleven = sessionStorage.getItem("eleventh");
+console.log(one)
          $(document).ready(function() {
              var ctx = $("#chart-line");
             
@@ -246,10 +265,11 @@
 ],
                      datasets: [{
                          data: [firstTypePoints , secondTypePoints , thirdTypePoints , fourthTypePoints , fifthTypePoints , sixthTypePoints , seventhTypePoints , eighthTypePoints , ninthTypePoints , tenthTypePoints , eleventhTypePoints],
-                         label: "Percentage",
-                         borderColor: "#458af7",
-                         backgroundColor: '#458af7',
-                         fill: true
+                         label: "How happy are",
+                         borderColor: "#000",
+                       
+                         fill: true,
+                         backgroundColor: '#9678ff',
                      },
                      // {
                         // data: [168, 170, 178, 190, ],
@@ -295,28 +315,110 @@
      </div>
      </div>
 
-     <!--chart end-->
+     chart end-->
 
-     <footer class="share-btn-area footer">
-      <div>
-        <h5>Share the results with your friends!</h5>
+    
+
+      <!--chart start-->
+     <link rel="stylesheet" href="./Chart.js/style.css">
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
+      <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+      <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script>
+        
+          $(document).ready(function() {
+              var ctx = $("#chart-line");
+              let numo = 3 ;
+              let numt = 2 ;
+              let numf = 4 ;
+              let nums = 1 ;
+              var myLineChart = new Chart(ctx, {
+                
+     
+                  type: 'radar',
+                  data: {
+                      labels: ["Health & Vitality",
+   "Mindset & Emotional Mastery",
+   "Romantic Love",
+   "Family", 
+   "Friends & Social", 
+   "Productivity & Performance",
+   "Career & Business", 
+   "Wealth & Finances",
+   "Recreation & Lifestyle", 
+   "Leadership", 
+ "Spirituality", ],
+                      datasets: [{
+                          data: [firstTypePoints , secondTypePoints , thirdTypePoints , fourthTypePoints , fifthTypePoints , sixthTypePoints , seventhTypePoints , eighthTypePoints , ninthTypePoints , tenthTypePoints , eleventhTypePoints ],
+                          label: "Level",
+                          borderColor: "#9878ff",
+                          backgroundColor: '#9678ff',
+                          fill: true
+                      },
+                      // {
+                         // data: [168, 170, 178, 190, ],
+                          //label: "B Team",
+                          //borderColor: "#3cba9f",
+                          //fill: true,
+                          //backgroundColor: '#3cba9f'
+                     // }
+                      ]
+                  },
+                  options: {
+                      title: {
+                          display: true,
+                          text: 'Happiness Area'
+                      }
+                  }
+              });
+          });
+      </script>
+      <div class="chart_wrapper" data-aos="flip-down" data-aos-delay="200" data-aos-duration="1000">
+      <div class="page-content page-container" id="page-content">
+          <div class="padding">
+              <div class="row">
+                  <div class="container-fluid d-flex justify-content-center">
+                      <div class="col-sm-8 col-md-6">
+                          <div class="card">
+                              <div class="card-header">Your Results</div>
+                              <div class="card-body" style="height: 420px">
+                                  <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                      <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                          <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                                      </div>
+                                      <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                          <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                                      </div>
+                                  </div> <canvas id="chart-line" width="299" height="200" class="chartjs-render-monitor" style="display: block; width: 299px; height: 200px;"></canvas>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div>
-        <a href="#" class="facebook-btn"> <i class="fab fa-facebook"></i></a>
-
-        <!-- <a href="#" class="instagram-btn">
-      <i class="fab fa-instagram"></i>
-    </a>-->
-
-        <a href="#" class="linkedin-btn"><i class="fab fa-linkedin"></i></a>
-
-        <a href="#" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="twitter-btn"><i class="fab fa-twitter"></i></a>
       </div>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+      <!--chart end-->
+      <footer class="share-btn-area footer">
+        <div>
+          <h5>Share the results with your friends!</h5>
+        </div>
+        <div>
+          <a href="#" class="facebook-btn"> <i class="fab fa-facebook"></i></a>
+  
+  
+          <a href="#" class="linkedin-btn"><i class="fab fa-linkedin"></i></a>
+  
+          <a href="#" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="twitter-btn"><i class="fab fa-twitter"></i></a>
+        </div>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+   <!-- user info -->
+   <script src="js/userInfo.js"></script>
+    </body>
 </html>
