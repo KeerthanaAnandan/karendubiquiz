@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>KarenDubi Quiz</title>
-   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
  <!--aos-->
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
@@ -32,7 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width:100vw !important;
   height:100vh !important;
   overflow: hidden;
@@ -53,10 +54,21 @@
   text-align: center;
   width:70vw;
   height: 50vh;
-
-  font-family: 'Times New Roman', Times, serif;
+   margin-top:10%;
+   padding: 3%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
   border-radius: 20px;
   box-shadow: 0 0.4rem 0.4rem 0 #727070;
+}
+.lead{
+  
+  font-size: 30px;
+    font-weight: bold;
+}
+.normal{
+  
+  font-weight: normal;
 }
 /*#showcase .showcase-content h1 {
   font-size: 60px;
@@ -76,14 +88,16 @@
 background-color: #fff;
   display: inline-block;
   font-size: 20px;
-  
+  font-weight: bolder;
+ 
   margin: 1.5rem;
   padding: 13px 30px;
   border: none;
   border-radius: 0px 10px;
   cursor: pointer;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .showcase-content .btn:hover {
@@ -166,9 +180,9 @@ background-color: #fff;
             <!-- <img src="assets/polardentlogo.png" width="35%" id="imgcol" />-->
 <br><br>
 
-            <h2 class="lead">Take the MIND THE GAP QUIZ to
-              Find out How Happy you are</h2>
+            <h2 class="lead">Mind the Gap Quiz</h2>
 <br>
+<h4 class="normal">Take the quiz to Mind The Gaps of where you are and where you want to be. It’s a clear guide to help you decide what areas in life you want to improve now and empowers you to thrive in each of them without sacrificing or compromising one area for another.</h4>
             <!--- <div>
               <input
                 type="text"
@@ -178,7 +192,7 @@ background-color: #fff;
                 onchange="inputhandler(event)"
               />
             </div>-->
-<h3>Most people only focus on improving their career, wealth, health, and relationships - but in reality, there are many more areas of life that shape your success, happiness and true fulfillment</h3>
+<h3 class="normal">Most people only focus on improving their career, wealth, health, and relationships - but in reality, there are many more areas of life that shape your success, happiness and true fulfillment</h3>
         
             <div>
               <a class="btn" href="quiz.html"> START QUIZ</a>

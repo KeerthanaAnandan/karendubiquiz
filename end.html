@@ -9,6 +9,8 @@
     <!-- style.css 
       
     <link rel="stylesheet" href="css/style.css" />-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
      <!--aos-->
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
@@ -16,21 +18,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
     <style>
+      
      body{
        width:100vw;
       height: max-content;
+      
        
      }
+     .headerpara{
+            margin: 3%;
+           
+     }
       .bucket {
-        background-image: url("assets/bg3.jpg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-
+       
+        
         opacity: 0.9;
-        width: 100vw;
+        width: 100vw !important;
         height: auto;
         color: #000;
+     
       }
       #headone {
         color: #000;
@@ -52,7 +58,7 @@
       .bucket {
        text-align: center;
         
-        font-family: "Times New Roman", Times, serif;
+        font-family: 'Montserrat', sans-serif;
 
      
 
@@ -67,7 +73,7 @@
         
         margin: 50px !important;
         height: min-content;
-        font-family: "Times New Roman", Times, serif;
+        font-family: 'Montserrat', sans-serif;
 
         border-radius: 0px;
       }
@@ -93,7 +99,7 @@
         border-radius: 0px;
         cursor: pointer;
         text-decoration: none;
-        font-family: "Times New Roman", Times, serif;
+        font-family: 'Montserrat', sans-serif;
       }
 
       #showcas .btn:hover {
@@ -141,6 +147,30 @@
       .share-btn-area a:hover {
         color: #000;
       }
+      .button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 270px;
+  height: 50px;
+  background: linear-gradient(120deg, #9e78ff, #8daafc);
+ border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size:x-large;
+  line-height: normal;
+margin:auto;
+margin-top: 30px !important;
+font-family: 'Montserrat', sans-serif;
+}
+
+ .button:hover {
+  background:  transparent;
+color:#9678ff;
+  cursor: pointer;
+  border: 1px solid #9678ff;
+}
       @media (max-width: 540px) {
         #showcas #msghere {
           font-size: 17px;
@@ -155,7 +185,7 @@
 
           font-size: small;
           line-height: 17px;
-          font-family: "Times New Roman", Times, serif;
+          font-family: 'Montserrat', sans-serif;
 
           border-radius: 0px;
         }
@@ -190,7 +220,23 @@
     <br /><br /><br />-->
     <div id="showcas" data-aos="fade-up" class="iamtext">
       <div class="bucket">
-        <h1>How Happy Are You?</h1></div>
+        <h1>"MIND YOUR GAP QUIZ<br>
+          How happy are you?"</h1>
+        
+        <p class="headerpara">Now that you have identified a clear gap for each area of your Mind the Gap, the next step is to come up with an action plan for each area.
+
+What areas show up as needing more work? What ideas do you have for making progress today against those areas?
+If you would like to go a step further and work with me 1 on 1 to discuss your results and take action with on your biggest goals in your life, business and career – click here to learn more</p> 
+</div>
+
+<input
+type="submit"
+value="Click Here"
+
+class="button"
+/>
+
+
         <div class="showcase-content" id="bucket">
           <!--<h2>
             Here is your result!.
@@ -318,7 +364,12 @@ console.log(one)
      chart end-->
 
     
-
+<div><input
+  type="submit"
+  value="Click Here"
+  
+  class="button"
+  /></div>
       <!--chart start-->
      <link rel="stylesheet" href="./Chart.js/style.css">
       <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
@@ -400,6 +451,13 @@ console.log(one)
       </div>
       </div>
       <!--chart end-->
+      <div><input
+        type="submit"
+        value="Click Here"
+        
+        class="button"
+        /></div>
+        <br><br>
       <footer class="share-btn-area footer">
         <div>
           <h5>Share the results with your friends!</h5>

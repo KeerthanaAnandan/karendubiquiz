@@ -15,7 +15,7 @@
   margin-top: 30px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  font-family: "Brandon Grotesque", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 form {
 
@@ -25,7 +25,7 @@ form {
   justify-items: center;
   font-size: 20px;
   
-  font-family: "Brandon Grotesque", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center ;
 }
 
@@ -57,7 +57,7 @@ form label {
  flex-direction: row;
   color: grey;
   font-weight: bold;
-  
+  margin-left:10%;
   text-align: center;
   font-size: small;
   font-weight: lighter;
@@ -78,7 +78,7 @@ form .button {
   line-height: normal;
 margin:auto;
 margin-top: 30px !important;
-  font-family: "Brandon Grotesque", sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 
 form .button:hover {
