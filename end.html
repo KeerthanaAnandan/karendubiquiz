@@ -223,8 +223,8 @@ color:#9678ff;
     <br /><br /><br />-->
     <div id="showcas" data-aos="fade-up" class="iamtext">
       <div class="bucket">
-        <h1>"MIND YOUR GAP QUIZ<br>
-          How happy are you?"</h1>
+        <h1>MIND YOUR GAP QUIZ<br>
+          How happy are you?</h1>
         
         <p class="headerpara">Now that you have identified a clear gap for each area of your Mind the Gap, the next step is to come up with an action plan for each area.
 
@@ -380,6 +380,8 @@ console.log(one)
       <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
       <script>
+
+
         
           $(document).ready(function() {
               var ctx = $("#chart-line");
@@ -420,10 +422,21 @@ console.log(one)
                       ]
                   },
                   options: {
+                    
                       title: {
                           display: true,
                           text: 'Happiness Area'
-                      }
+                      },
+
+                      scale: {
+        ticks: {
+            // changes here
+            beginAtZero: true,
+        max: 10,
+        min: 0,
+        stepSize: 1
+        }
+    }
                   }
               });
           });
@@ -444,7 +457,7 @@ console.log(one)
                                       <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
                                           <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
                                       </div>
-                                  </div> <canvas id="chart-line" width="299" height="200" class="chartjs-render-monitor" style="display: block; width: 299px; height: 200px;"></canvas>
+                                  </div> <canvas  id="chart-line" width="299" height="200" class="chartjs-render-monitor" style="display: block; width: 299px; height: 200px;"></canvas>
                               </div>
                           </div>
                       </div>
