@@ -15,11 +15,7 @@
     <style>
       *{margin:0px;
       padding: 0;}
-      body{
-        width:100vw;
-        height:100vh;
-       overflow: hidden;
-      }
+    
       .imgbucket {
      
         opacity: 1;
@@ -37,6 +33,7 @@
   width:100vw !important;
   height:100vh !important;
   overflow: hidden;
+  overflow-x: hidden !important;
   /*margin: auto;
   max-width: 1100px;
   overflow: auto;
@@ -106,6 +103,16 @@ background-color: #fff;
   color: #fff;
 }
 @media (max-width: 540px) {
+  .wrapperhouse{
+    position: relative;
+    width: 100vw;
+    height: max-content;
+    overflow-x: hidden;
+  }
+  body{
+    overflow: scroll;
+    overflow-x: hidden !important;
+  }
  .logo{
    width:300%;
    margin: 10px;
@@ -113,15 +120,17 @@ background-color: #fff;
   .container{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
   }
   #showcase .showcase-content {
   
  margin: auto;
    width:65vw;
-    height: 70vh;
+    height: max-content;
     font-size: small;
   line-height: 25px;
+  padding: 5%;
     }
     .showcase-content .btn {
   
@@ -148,6 +157,7 @@ background-color: #fff;
     </style>
   </head>
   <body >
+    <div class="wrapperhouse">
     <!--navbar-->
     <nav id="navbar">
       <h1 class="logo">
@@ -208,6 +218,6 @@ background-color: #fff;
       AOS.init();
 
     </script>
-   
+   </div>
   </body>
 </html>
