@@ -57,7 +57,7 @@ form label {
  flex-direction: row;
   color: grey;
   font-weight: bold;
-  margin-left:10%;
+  margin-left:8%;
   text-align: center;
   font-size: small;
   font-weight: lighter;
@@ -70,7 +70,7 @@ form .button {
   justify-content: center;
   max-width: 270px;
   height: 50px;
-  background: linear-gradient(120deg, #9e78ff, #8daafc);
+  background: #C65670;
  border: none;
   border-radius: 7px;
   color: #fff;
@@ -83,9 +83,9 @@ font-family: 'Montserrat', sans-serif;
 
 form .button:hover {
   background:  transparent;
-color:#9678ff;
+color:#b34f66;
   cursor: pointer;
-  border: 1px solid #9678ff;
+  border: 1px solid #C65670;
 }
 
 /* Mailchimp CSS */

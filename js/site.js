@@ -94,7 +94,7 @@ function show(count) {
   question.innerHTML = `
   <h2>${questions[count].question}</h2>
    <ul class="option_group">
-  <li><span class="option"><span class="tick"><i class="far fa-check-circle " id="tick" ></i></span> <span class="optionsingle">  1</span></span></li>
+  <li><span class="option"><span class="tick"><i class="far fa-check-circle" id="tick" ></i></span> <span class="optionsingle">  1</span></span></li>
   <li ><span class="option"><span class="tick"><i class="far fa-check-circle " id="tick" ></i></span>  <span class="optionsingle"> 2</span></span></li>
   <li ><span class="option"><span class="tick"><i class="far fa-check-circle " id="tick" ></i></span> <span class="optionsingle"> 3</span></span></li>
   <li ><span class="option"><span class="tick"><i class="far fa-check-circle " id="tick" ></i></span>  <span class="optionsingle"> 4</span></span></li>
@@ -106,7 +106,7 @@ function show(count) {
   <li ><span class="option"><span class="tick"><i class="far fa-check-circle " id="tick" ></i></span>  <span class="optionsingle"> 10</span></span></li>
 </ul> 
   `;
-  let tickIcon = document.getElementById("tick")
+ // let tickIcon = document.getElementById("tick")
  // tickIcon.style.display = "none";
  //tickIcon.style.visibility = "hidden"
   let option = document.querySelector(".option");
@@ -115,13 +115,13 @@ function show(count) {
 
     //tickIcon.style.visibility = "visible";
   
-  option.addEventListener("mouseout" , function(){
-    tickIcon.classList.remove("faro")
+  //option.addEventListener("mouseout" , function(){
+   // tickIcon.classList.remove("faro")
    // tickIcon.style.visibility = "hidden";
-  }
+  //}
 
  
-   ) 
+   //) 
   toggleActive();
 }
 

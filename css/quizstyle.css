@@ -67,7 +67,8 @@ li {
   opacity: 0.8;
 }
  .far{ 
-  background: #9678ff;
+   
+  background: #C65670;
   color: #fff;
   width: 30px;
   height: 30px;
@@ -80,7 +81,7 @@ li {
 
 .faro {
   background: #fff;
-  color: #9678ff;
+  color: #C65670;
   transition: all .3s ease;
   box-shadow: 5px 5px 5px #000;
   transform: translateY(-5px);
@@ -88,7 +89,7 @@ li {
 .tick{
   display: inline-block;
   font-size:1em;
-  color: #9678ff;
+  color: #C65670;
   
 }
 /*.far{
@@ -117,19 +118,19 @@ li {
   background-color: white;
   color: #666 !important;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 1px 23px 1px rgb(0 0 0 / 7%), inset 4px 0 0 0 rgb(157 120 254 / 51%);
+  box-shadow: 0 1px 23px 1px rgb(0 0 0 / 7%), inset 4px 0 0 0 #C65670;
   margin: 15px auto 0;
   cursor: pointer;
   text-align: left;
   border-radius: 0 8px 0 8px;
-  box-shadow: 0 1px 23px 1px rgb(0 0 0 / 7%), inset 4px 0 0 0 rgb(157 120 254 / 51%);
+  /*box-shadow: 0 1px 23px 1px rgb(0 0 0 / 7%), inset 4px 0 0 0 rgb(157 120 254 / 51%);*/
   background-color: #ffffff;
   transition: all .15s;
 }
 
 .option:hover {
   cursor: pointer;
-  background: linear-gradient(120deg, #9e78ff, #8daafc);
+  background: #C65670;
   box-shadow: 0 0.1rem 0.1rem 0 #000000;
   transition: transform 130ms;
   transform: translateY(-0.1rem);
