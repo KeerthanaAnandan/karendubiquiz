@@ -72,6 +72,11 @@
                 placeholder="Enter email here..."
               />
             </div>
+            <!--<div class="mc-field-group">
+              <label for="mce-MMERGE2">UserResult 
+            </label>
+              <input type="text" value="" name="MMERGE2"  id="mce-MMERGE2" id="usertype">
+            </div>-->
             <div id="mce-responses" class="clear">
               <div
                 class="response"
@@ -118,7 +123,27 @@
     <script>
       AOS.init();
     </script>
-    
+     <!--mailchimp type secret -->
+    <script>
+      let firstTypePoints = sessionStorage.getItem("first");
+let secondTypePoints = sessionStorage.getItem("second");
+let thirdTypePoints = sessionStorage.getItem("third");
+let fourthTypePoints = sessionStorage.getItem("fourth");
+let fifthTypePoints = sessionStorage.getItem("fifth");
+let sixthTypePoints = sessionStorage.getItem("sixth");
+let seventhTypePoints = sessionStorage.getItem("seventh");
+let eighthTypePoints = sessionStorage.getItem("eighth");
+let ninthTypePoints = sessionStorage.getItem("ninth");
+let tenthTypePoints = sessionStorage.getItem("tenth");
+let eleventhTypePoints = sessionStorage.getItem("eleventh");
+     
+//window.onload = function () {
+  let usertypehere = document.querySelector("#usertype");
+  usertypehere.style.display = "none"
+  usertypehere.innerHTML = firstTypePoints;
+  console.log(usertypehere);
+//=}
+    </script>
   </body>
 </html>
 

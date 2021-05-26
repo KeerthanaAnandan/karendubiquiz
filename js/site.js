@@ -1,15 +1,15 @@
 let questions = [
-  { id: 1, question: "On a scale from 1-10 HOW HAPPY are you with your current Health & Vitality?",},
-  { id: 2, question: "On a scale from 1-10 HOW HAPPY are you with your current Mindset & Emotional Mastery?",},
-  { id: 3, question: "On a scale from 1-10 HOW HAPPY are you in the area of Romantic Love?",},
-  { id: 4, question: "On a scale from 1-10 HOW HAPPY are you in the area of Family?",},
-  { id: 5, question: "On a scale from 1-10 HOW HAPPY are you with your Friends & Social Life?",},
-  { id: 6, question: "On a scale from 1-10 HOW HAPPY are you with your Productivity & Performance?",},
-  { id: 7, question: "On a scale from 1-10 HOW HAPPY are you with your Career & Business ?",},
-  { id: 8, question: "On a scale from 1-10 HOW HAPPY are you with your Wealth & Finances?",},
-  { id: 9, question: "On a scale from 1-10 HOW HAPPY are you with your Lifestyle / Recreation?",},
-  { id: 10, question: "On a scale from 1-10 HOW HAPPY are you with your Leadership, Impact & Contribution?",},
-  { id: 11, question: "On a scale from 1-10 HOW HAPPY are you with your Spirituality?",},
+  { id: 1, question: "I am happy with my overall health and state of physical well-being. I have vitality and energy throughout the day.  ",},
+  { id: 2, question: "I have peace of mind and emotional stability on a regular basis. I am in control of my moods.",},
+  { id: 3, question: "My current romantic relationship supports my best self. I feel intimately connected with my partner. If you are not currently in a relationship, please rate your most recent partnership.",},
+  { id: 4, question: "My family is connected and brings me great joy.",},
+  { id: 5, question: "I am grateful to have such wonderful people in my life. I enjoy spending time with my friends. I feel enriched that the people I spend time with elevate me as a person.",},
+  { id: 6, question: "I complete tasks and pursuits that I set for myself each day. I am productive and motivated to take action in my personal performance at home or in my workplace.",},
+  { id: 7, question: "I am happy in my career. I enjoy what I do, and I am enthusiastic to continue to grow and develop in my current job/business.",},
+  { id: 8, question: "My financial status currently and in the future is ___________.",},
+  { id: 9, question: "I enjoy taking time for rest and relaxation. I take time for self-care and I value the importance of doing things that bring me joy.",},
+  { id: 10, question: "I feel aligned in my ability to lead others, influence, impact with integrity, and contribute to the lives of others",},
+  
  
 ];
 
@@ -65,9 +65,9 @@ function next(e) {
   else if(question_count == 9){
     sessionStorage.setItem("tenth" , user_answer)
   }
-  else if(question_count == 10){
+  /*else if(question_count == 10){
     sessionStorage.setItem("eleventh" , user_answer)
-  }
+  } */
   
 
 
